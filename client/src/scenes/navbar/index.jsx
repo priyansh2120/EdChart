@@ -86,7 +86,16 @@ const Navbar = () => {
                         <LightMode sx={{ color: dark, fontSize: "25px" }} />
                     )}
                 </IconButton>
-                <Message sx={{ fontSize: "25px" }} />
+                <a
+                        href="https://chat-app-wordlecuo.onrender.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                        <IconButton>
+                            <Message sx={{ fontSize: "25px" }} />
+                        </IconButton>
+                    </a>
                 <Notifications sx={{ fontSize: "25px" }} />
                 <Help sx={{ fontSize: "25px" }} />
                 <FormControl variant="standard" value={fullName} >
@@ -155,7 +164,16 @@ const Navbar = () => {
                             <LightMode sx={{ color: dark, fontSize: "25px" }} />
                         )}
                     </IconButton>
-                    <Message sx={{ fontSize: "25px" }} />
+                    <a
+                        href="https://chat-app-wordlecuo.onrender.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                        <IconButton>
+                            <Message sx={{ fontSize: "25px" }} />
+                        </IconButton>
+                    </a>
                     <Notifications sx={{ fontSize: "25px" }} />
                     <Help sx={{ fontSize: "25px" }} />
                     <FormControl variant="standard" value={fullName} >
