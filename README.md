@@ -1,42 +1,88 @@
-# Edchart
-Intro
-I started working on this app a while ago when I was still learning technologies used in this project, so please be aware that the codebase (and the whole app in general) isn't perfect and there is still room for improvement, even though I've updated the code multiple times over the past years.
+# EdChart - Social Media App
 
-So, consider this as a learning example or just a showcase rather than a production-quality code.
+EdChart is a social media application built to connect users, share posts, and engage in meaningful conversations. This project is developed using React for the frontend and Node.js with Express for the backend.
 
-Description
-Shopping cart app build with MERN stack and using RESTful API design. Responsive front-end design done with Material-UI, uses Redux for state management, Node & Express for API, MongoDB as database. App runs in Docker containers but you can also run each sub-app separately, without Docker.
+## Features
 
-You can get and view the list of all products from the API, register, add products to cart, remove specific product or empty entire cart, make order...
+- User authentication and authorization
+- Posting and sharing updates
+- Messaging feature for private conversations
+- Dark mode support
+- Responsive design for both desktop and mobile devices
 
-Technologies & Tools
-Front-end:
-React
-Redux
-Material-UI
-Webpack
-TypeScript
-Backend:
-Node/Express
-MongoDB/Mongoose
-Installation and Usage
-Requirements:
-Docker
+## Getting Started
 
+### Prerequisites
 
-Node.js installed
-MongoDB connection
-Steps:
-Clone repo on your local machine:
-$ git clone https://github.com/priyansh2120/Edchart
-$ cd server
-$ npm install
-$ npx nodemon index.js
+- Node.js and npm installed on your machine
+- MongoDB database (you can use MongoDB Atlas or a local instance)
 
-<!-- Another terminal -->
+### Installation
 
-$cd server
-$npm install
-$npm start
+1. Clone the repository:
 
-and you are good to go
+   ```bash
+   git clone https://github.com/priyansh2120/Edchart.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Edchart
+   ```
+
+3. Install dependencies for both the client and server:
+
+   ```bash
+   # Install client dependencies
+   cd client
+   npm install
+
+   # Install server dependencies
+   cd ../server
+   npm install
+   ```
+
+4. Set up environment variables:
+
+   Create a `.env` file in the `server` directory with the following content:
+
+   ```env
+   MONGO_URL=YOUR_MONGODB_CONNECTION_STRING
+   PORT=YOUR_SERVER_PORT
+   ```
+
+   Replace `YOUR_MONGODB_CONNECTION_STRING` with your MongoDB connection string and `YOUR_SERVER_PORT` with the desired server port.
+
+### Running the App
+
+1. Start the server:
+
+   ```bash
+   # Inside the server directory
+   node index.js
+   ```
+
+2. Start the client:
+
+   ```bash
+   # Inside the client directory
+   npm start
+   ```
+
+   The app should now be running locally. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to access EdChart.
+
+## Contributing
+
+Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md) when making pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any inquiries or issues, please open a GitHub issue or contact the project maintainers:
+
+- [Priyansh Kumar](https://github.com/priyansh2120)
+
